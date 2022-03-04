@@ -1,0 +1,89 @@
+// main section
+
+main#main {     
+    background-image: url(../background-lg.png);     
+    float: left;     
+    width: 100%;     
+    padding: 180px 0 470px 0;     
+    background-color: $lightGrey;     
+    background-size: 100%;     
+    background-position: bottom;     
+    background-repeat: no-repeat; 
+}
+
+.headerContent {     
+    display: flex;      
+    width: 100%; }
+
+.information {     
+    float: left;     
+    width: 60%;     
+    padding: 0 40px 0 0; 
+    h1 {     
+        float: left;     
+        width: 100%;     
+        margin: 0 0 20px 0;     
+        font-size: 25px;     
+        font-weight: 500; 
+    }
+    h2 {     
+        margin: 0 0 20px 0;     
+        float: left;     
+        width: 100%;     
+        font-size: 40px;     
+        font-weight: 600; 
+    }
+    p {     
+        float: left;     
+        width: 100%;     
+        margin: 0 0 20px 0;     
+        font-weight: 500;     
+        line-height: 25px; 
+    }
+}
+.headerImage {     
+    float: left;     
+    width: 40%; 
+}
+
+.headerButtons {     
+    float: left;     
+    width: 100%; 
+    button {     
+        float: left;     
+        width: auto;     
+        cursor: pointer;     
+        border: none;     
+        padding: 15px 40px;     
+        border-radius: 50px;     
+        margin: 0 15px 0 0;     
+        font-weight: 600;     
+        letter-spacing: 0;     
+        font-size: 16px;     
+        box-shadow: 0 1px 3px 1px rgb(0 0 0 / 20%);     
+        transition: 0.4s ease all;
+    }
+}
+button.whiteButton {background: $white;
+}
+
+button.redButton:hover,
+button.redButton:active {     
+    background: $white;     
+    color: $black; 
+}
+
+button.whiteButton:hover,
+button.whiteButton:active {     
+    background: $red;     
+    color: $white; 
+}
+
+button.redButton {     
+    background: $red;     
+    color: $white; 
+}
+
+.headerImage img {     
+    border-radius: 50%; 
+}

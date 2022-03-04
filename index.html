@@ -5,252 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/styles.css">
+
     <script src="https://kit.fontawesome.com/23031be945.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header starts -->
     <header class="header">
         <div class="container">
-            <nav class="navBar">
-                <button type="button" class="navToggler" id="navToggler">
-                    <span class="mainNavTogglerIcon">
-                        <svg width="45" height="45" viewBox="0 0 100 100">
-                            <path class="line line1"
-                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                            <path class="line line2" d="M 20,50 H 80" />
-                            <path class="line line3"
-                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                        </svg>
-                    </span>
-                </button>
-                <div class="menu" id="menu">
-                    <ul class="menuBlock">
-                        <li class="menuItem">
-                            <a class="menuLink active" href="#home">Home</a>
-                        </li>
-                        <li class="menuItem">
-                            <a class="menuLink active" href="#skills">Skills</a>
-                        </li>
-                        <li class="menuItem">
-                            <a class="menuLink" href="#courses">Courses</a>
-                        </li>
-                        <li class="menuItem">
-                            <a class="menuLink" href="#projects">Projects</a>
-                        </li>
-                        <li class="menuItem">
-                            <a class="menuLink" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li class="#"><a href="#">Skills</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
-        </div>
+            
     </header>
 
     <!-- end of header -->
 
     <!-- main section starts -->
     <main id="main">
-        <div class="container">
-            <div class="row aiCenter">
-                <article class="columnLg6">
-                    <div class="articleWrapper">
-                        <h1 class="greetings">Hello I'm Marina</h1>
-                        <h2 class="title">Front-End Developer</h2>
-                        <p class="info">I love the challenge of solving complex problems with code, and a strong passion for building clean and accessible web
-                        applications. I hope to make an impact using my
-                        previous experience in HR field. This experience taught me how to communicate with different types of people and build
-                        positive relationships. Additionally, was able to develop skills that allowed me to motivate and inspire others to
-                        achieve goals and express their opinions.
-                        </p>
-                        <div class="btnContainer">
-                            <a href="#" class="ctaBtn ctaWhite">Hire me</a>
-                            <a href="#" class="ctaBtn ctaRed">Get resume</a>
-                        </div>
-                    </div>
-                </article>
-                <div class="columnLg6 textCenter">
-                    <img src="./assets/header-image.JPG" alt="Personal image">
-                </div>
-
+    <div class="headerContent">
+        <div class="information">
+            <h1 class="greetings">Hello I'm Marina</h1>
+            <h2 class="title">Front-End Developer</h2>
+            <p class="info">I love the challenge of solving complex problems with code, and a strong passion for building clean and
+                accessible web
+                applications. I hope to make an impact using my
+                previous experience in HR field. This experience taught me how to communicate with different types of people and
+                build
+                positive relationships. Additionally, was able to develop skills that allowed me to motivate and inspire others to
+                achieve goals and express their opinions.
+            </p>
+            <div class="headerButtons">
+                <button class="whiteButton">Hire me</button>
+                <button class="redButton">Get resume</button>
             </div>
+    
         </div>
+        <div class="headerImage">
+            <img src="./assets/header-image.JPG" alt="">
+        </div>
+    </div>
+
     </main>
     <!-- end of main section -->
 
-
-    <section class="skills textCenter" id="skills">
-        <div class="container py5">
-            <div class="skillsWrapper">
-                <h3 class="mainTitle">Skills</h3>
-            </div>
-            <div class="row justifyContentCenter">
-                <div class="column6 columnLg6">
-
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-sass"></i>
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-github"></i>
-                    <i class="fas fa-fire"></i>
-                    <i class="fas fa-mobile-alt"></i>
-
-                </div>
-            </div>
+    <!-- Skills section starts -->
+    <section class="skills" id="skills">
+        <div class="wrapper">
+            <h2>Skills</h2>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-github"></i>
+            <i class="fas fa-fire"></i>
+            <i class="fas fa-mobile-alt"></i>
         </div>
     </section>
 
+    
     <!-- end of skills sections -->
 
     <!-- Courses section starts -->
-    <section class="courses textCenter" id="courses">
-        <div class="container">
-            <div class="coursesWrapper">
-                <h3 class="mainTitle">Courses</h3>
-                
+    <section>
+        <div class="wrapper">
+        <div class="coursesBlocks">
+            <!-- first courses -->
+            <div class="coursesInfo">
+                <h3 class="coursesTitle">Web Development Bootcamp</h3>
+                <p class="company">Juno College of Technology</p>
+                <p class="time">Jan 2022 - March 2022</p>
             </div>
-            <div class="row coursesSlider">
-                <!-- first courses -->
-                <article class="columnXl4">
-                    <div class="articleWrapper">
-                        <h3 class="coursesTitle">Web Development Bootcamp</h3>
-                        <p class="company">Juno College of Technology</p>
-                        <p class="time">Jan 2022 - March 2022</p>
-                    </div>
-                </article>
-                <!-- second courses -->
-    
-                    <article class="columnXl4">
-                        <div class="articleWrapper">
-                            <h3 class="coursesTitle">JavaScript</h3>
-                            <p class="company">Juno College of Technology</p>
-                            <p class="time">Dec 2021 - Jan 2022</p>
-                        </div>
-                    </article>
-                <!-- third courses -->
-                <article class="columnXl4">
-                    <div class="articleWrapper">
-                        <h3 class="coursesTitle">Web Development</h3>
-                        <p class="company">Juno College of Technology</p>
-                        <p class="time">Nov 2021 - Dec 2021</p>
-                    </div>
-                </article>
+            <!-- second courses -->
+            <div class="coursesInfo">
+                <h3 class="coursesTitle">JavaScript</h3>
+                <p class="company">Juno College of Technology</p>
+                <p class="time">Dec 2021 - Jan 2022</p>
+                </div>
+                 <!-- third courses -->
+                <div class="coursesInfo">
+                    <h3 class="coursesTitle">Web Development</h3>
+                    <p class="company">Juno College of Technology</p>
+                    <p class="time">Nov 2021 - Dec 2021</p>
+                </div>
             </div>
         </div>
-    </section>
+        
+    </section>       
+
 
     <!-- end of courses section -->
 
     <!-- portfolio section starts -->
-    <section class="isotope textContainer" id="isotope">
-        <div class="container">
-            <div class="isotopeWrapper">
-                <h3>Projects</h3>
-                <p class="mainInfo">Check Out my Latests Works</p>
-            </div>
-            <div class="isotopeContainer">
-                <div class="isotopeBtns">
-                    <button class="isotopeBtn active">All works</button>
+    <section class="projectsSection" id="projectsSection">
+        <div class="wrapper">
+            <h3>Projects</h3>
+            <p class="projectInfo">Check Out my Latests Works</p>
+            <div class="project-container reveal fade-in-left">
+                <!-- start project 1 -->
+                <div class="projectImage">
+                    <img src="" alt="">
                 </div>
-                <div class="isotopeItems row">
-                    <div class="columnLg4">
-                        <div class="isotopeOverlay">
-                            <img src="https://dummyimage.com/420.png" alt="" class="imgResp">
-                            <div class="overlayContent">
-                                <div class="overlay">
-                                    <h3 class="overlayTitle">Lorem, ipsum dolor.</h3>
-                                    <p class="overlayText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, illum.</p>
-                                    <div class="overlayIcons">
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-html5"></i>
-                                    </div>
-                                    <div class="overlayLinks">
-                                        <a href="#">Live</a>
-                                        <a href="#">Repo</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+            
+                <div class="projectText">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, maiores.</p>
+                    <div class="toolsContainer">
+                        <ul>
+                            <li><i class="fab fa-html5" aria-label="HTML5"></i></li>
+                            <li><i class="fab fa-sass" aria-label="Sass"></i></li>
+                            
+                        </ul>
                     </div>
-                    <div class="columnLg4">
-                        <div class="isotopeOverlay">
-                            <img src="https://dummyimage.com/420.png" alt="" class="imgResp">
-                            <div class="overlayContent">
-                                <div class="overlay">
-                                    <h3 class="overlayTitle">Lorem, ipsum dolor.</h3>
-                                    <p class="overlayText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, illum.</p>
-                                    <div class="overlayIcons">
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-html5"></i>
-                                    </div>
-                                    <div class="overlayLinks">
-                                        <a href="#">Live</a>
-                                        <a href="#">Repo</a>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        </div>
+                    <div class="linksContainer">
+                        <a href=""
+                            title="">Live</a>
+                        <a href=""
+                            title="">Repo</a>
                     </div>
-                    <div class="columnLg4">
-                        <div class="isotopeOverlay">
-                            <img src="https://dummyimage.com/420.png" alt="" class="imgResp">
-                            <div class="overlayContent">
-                                <div class="overlay">
-                                    <h3 class="overlayTitle">Lorem, ipsum dolor.</h3>
-                                    <p class="overlayText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, illum.</p>
-                                    <div class="overlayIcons">
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-html5"></i>
-                                    </div>
-                                    <div class="overlayLinks">
-                                        <a href="#">Live</a>
-                                        <a href="#">Repo</a>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
+            </div> <!-- end project 1 -->
+            <!-- start project 2 -->
+            <div class="projectImage">
+                <img src="" alt="">
+            </div>
+            
+            <div class="projectText">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, maiores.</p>
+                <div class="toolsContainer">
+                    <ul>
+                        <li><i class="fab fa-html5" aria-label="HTML5"></i></li>
+                        <li><i class="fab fa-sass" aria-label="Sass"></i></li>
+                        <li><i class="fab fa-js" aria-label="JavaScript ES6"></i></li>
+            
+                    </ul>
+                </div>
+                <div class="linksContainer">
+                    <a href="" title="">Live</a>
+                    <a href="" title="">Repo</a>
                 </div>
             </div>
+            </div> <!-- end project 2 -->
         </div>
 
     </section>
+    <!-- portfolio section ends -->
 
     <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footerWrapper textContainer">
+        <div class="wrapper">
+            <div class="footerContainer">
                 <h3 class="mainTitle">Would you like to work with me?</h3>
                 <p class="mainInfo">Let's keep in touch.</p>
+                <form id="form">
+                    <input name="email" type="text" id="text" placeholder="Enter your email..." value="">
+                    <button>Hire me</button>
+                </form>
             </div>
-            <div class="row jcCenter">
-                <div class="columnLg8">
-                    <form class="mail-sub-form" action="#" method="post">
-                        <label for="email">
-                            <input type="email" name="email" class="input" id="email" placeholder="enter your email">
-                        </label>
-                        <button class="formSubmit">Hire me</button>
-                    </form>
-                </div>
+            <div class="footerContact">
+                <ul>
+                    <i class="fas fa-at"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fas fa-calendar"></i>
+                </ul>
             </div>
-            <div class="row aiCenter textCenter footerBottom">
-                <div class="columnLg6">
-                    <a href="mailto:mzubtsova@mail.ru" class="footerMail">mzubtsova@mail.ru</a>
-                </div>
-                <div class="columnLg6">
-                    <div class="socialIcons">
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fas fa-calendar"></i>
-
-                    </div>
-                </div>
+            <div class="footerName">
+                <p>Created by Marina Zubtsova 2022</p>
             </div>
         </div>
     </footer>

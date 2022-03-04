@@ -1,0 +1,76 @@
+// courses page
+
+section.course_outer {     
+    float: left;   
+    position: relative;  
+    width: 100%;     
+    padding: 170px 0 200px 0; 
+}
+
+section.course_outer:after {     
+    content: '';     
+    position: absolute;     
+    top: 0;     
+    background-image: linear-gradient(to right, $lightGrey, $lightGrey);     width: 100%;     
+    height: 100%;     
+    z-index: -9;     
+    left: 0; 
+    // color affect for courses page
+    clip-path: polygon(0% 16%, 100% 0%, 100% 86%, 0% 100%);  
+}
+
+.courses_main{
+    float:left; 
+    width:100%; 
+    display: flex; 
+}
+
+.coursesBlocks {     
+    float: left;     
+    width: 100%; 
+    h2 {     
+        float: left;     
+        width: 100%;     
+        text-align: center;     
+        font-size: 35px;     
+        letter-spacing: 2px;     
+        margin: 0 0 50px 0; 
+    }
+}
+.coursesInfo {     
+    float: left;     
+    width: 33%;     
+    text-align: center;     
+    padding: 0 10px; 
+}
+.coursesInfo_detail {
+    float: left;
+    width: 100%;
+    background: $white;
+    padding: 40px 0;
+    box-shadow: 5px 5px 4px 0px rgb(0 0 0 / 20%);
+    h3 {     
+        float: left;     
+        width: 100%;     
+        font-size: 18px;     
+        margin: 0 0 20px 0; 
+    }
+    p {     
+        float: left;     
+        width: 100%;     
+        margin: 0 0 20px 0;     
+        font-size: 14px;     
+        font-weight: 500; 
+    }
+}
+
+.coursesInfo_detail p:last-child {     
+    margin: 0; 
+}
+.coursesInfo_detail p.company {     
+    color: $red; 
+}
+.coursesInfo_detail p.time {     
+    font-weight: 600;     
+    color: $cream; 
+}

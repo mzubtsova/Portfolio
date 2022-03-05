@@ -1,0 +1,120 @@
+// footer section
+
+.footer_upper{
+    float:left; 
+    width:100%;
+}
+.footer_bottom {     
+    float: left;     
+    width: 100%;     
+    background-image: url(../assets/ft-bg.png);     
+    padding: 470px 0 0 0;    
+    background-size: 100%;     
+    background-repeat: no-repeat;     
+    background-position: bottom; 
+}
+
+footer.footer {     
+    float: left;     
+    width: 100%;     
+    padding: 90px 0 0 0; 
+}
+.footerContainer {     
+    float: left;     
+    width: 100%; 
+    h3 {     
+        float: left;     
+        width: 100%;     
+        text-align: center;     
+        font-size: 35px;     
+        letter-spacing: 2px;     
+        margin: 0 0 30px 0; 
+    }
+}
+
+footer p.mainInfo {     
+    float: left;     
+    width: 100%;     
+    text-align: center;     
+    letter-spacing: 7px; 
+}
+.footerContainer form {     
+    float: left;     
+    width: 100%;     
+    display: flex;      
+    margin: 50px 0;     
+    padding: 0 90px; 
+    input {     
+        float: left;     
+        width: 80%;     
+        border-radius: 0;     
+        border: 1px solid #F24151;     
+        padding: 10px 20px;     
+        font-size: 16px; 
+        border-right:none;}
+        button {     
+            width: 20%;     
+            float: left;     
+            background: $red;     
+            border: none;     
+            padding: 20px 0;
+            cursor:pointer;     
+            color: $white;     
+            font-size: 16px;     
+            font-weight: 600; 
+            transition: 0.4s ease all;}
+}
+
+.footerContainer form input:focus-visible {     
+    outline: none; 
+}
+.footerContainer form button:hover,
+.footerContainer form button:focus {     background: $black;     
+       color: $white; 
+    }
+.footerName_main { 
+    display: flex;     
+    justify-content: space-between;     
+    width: 100%;     
+    margin: 0; 
+}
+
+.footerName p {     
+    float: left;     
+    width: auto;     
+    color: $white;     
+    margin: 0;     
+    line-height: inherit; 
+}
+.footerContact {     
+    float: left;     
+    width: auto;     
+    margin: 0 0 20px 0; 
+    ul {     
+        float: left;     
+        width: auto;
+
+        i {  
+            transition:0.4s ease all;   
+            float: left;     
+            color: $white;     
+            font-size: 25px;     
+            margin: 0 0 0 30px; 
+        }
+    }
+}
+
+.footerName {     
+    float: left;     
+    width: auto; 
+}
+
+.footerContact ul li {     
+    float: left;     
+    width: auto;     
+    list-style-type: none; 
+}
+.footerContact ul i:hover,
+.footerContact ul i:focus {     
+    color: $red; 
+}

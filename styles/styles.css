@@ -537,3 +537,96 @@ section.course_outer:after {
   font-weight: 600;
   color: #af9883;
 }
+
+section.projectsSection {
+  float: left;
+  width: 100%;
+  padding: 80px 0;
+}
+section.projectsSection h2 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin: 0 0 30px 0;
+}
+section.projectsSection p.projectInfo {
+  float: left;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+.project-container-main {
+  float: left;
+  width: 100%;
+  margin: 60px 0 0 0;
+  display: grid;
+  grid-column-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projectText {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.projectText h3 {
+  float: left;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.projectText p {
+  float: left;
+  width: 100%;
+  margin: 0 0 25px 0;
+}
+
+.toolsContainer {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.toolsContainer ul {
+  float: left;
+  width: 100%;
+}
+.toolsContainer ul li {
+  float: none;
+  display: inline-block;
+  width: auto;
+  margin: 0 5px;
+}
+.toolsContainer ul li i {
+  font-size: 30px;
+}
+
+.linksContainer {
+  float: left;
+  width: 100%;
+  margin: 25px 0 0 0;
+}
+.linksContainer a {
+  float: none;
+  display: inline-block;
+  font-weight: 600;
+  width: auto;
+  background: #f24150;
+  color: #ffffff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  -webkit-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+}
+
+.linksContainer a:hover,
+.linksContainer a:focus {
+  -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.linksContainer a:last-child {
+  background: #f2e8df;
+  color: #000000;
+}

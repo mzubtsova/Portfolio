@@ -1,0 +1,90 @@
+// projects section
+
+section.projectsSection {     
+    float: left;     
+    width: 100%;     
+    padding: 80px 0;
+    h2 {     
+        float: left;     
+        width: 100%;     
+        text-align: center;     
+        font-size: 35px;     
+        letter-spacing: 2px;     
+        margin: 0 0 30px 0; 
+    }
+    p.projectInfo {     
+        float: left;     
+        width: 100%;     
+        text-align: center;     
+        letter-spacing: 7px; 
+    }
+}
+
+.project-container-main {     
+    float: left;     
+    width: 100%;     
+    margin: 60px 0 0 0;
+    display: grid;     
+    // display: -ms-grid;     /* grid-template: 1fr 1fr/ 1fr 1fr; */     
+    grid-column-gap: 25px;     
+    grid-template-columns: repeat(3, 1fr);
+       
+    }
+
+    .projectText {     
+        float: left;     
+        width: 100%;     
+        text-align: center; 
+        h3 {     
+            float: left;     
+            width: 100%;     
+            margin: 10px 0 10px 0; 
+        }
+        p {     
+            float: left;     
+            width: 100%;     
+            margin: 0 0 25px 0; 
+        }
+    }
+    .toolsContainer {     
+        float: left;     
+        width: 100%;     
+        text-align: center; 
+        ul {     
+            float: left;     
+            width: 100%; 
+            li {     
+                float: none;     
+                display: inline-block;     width: auto;     
+                margin: 0 5px; 
+                i {     
+                    font-size: 30px; 
+                }
+            }
+    }
+}
+.linksContainer {     
+    float: left;     
+    width: 100%;     
+    margin: 25px 0 0 0; 
+    a {     
+        float: none;     
+        display: inline-block;     font-weight: 600;     
+        width: auto;     
+        background: $red;     
+        color: $white;     
+        padding: 8px 30px;    
+         border-radius: 50px;     
+         transition: 0.4s ease all;
+        }
+}
+.linksContainer a:hover,
+.linksContainer a:focus {     
+    box-shadow: 0 0 2px 0px rgba(0,0,0,0.5);
+    //  -webkit-box-shadow: 0 0 2px 0px rgba(0,0,0,0.5); 
+}
+
+.linksContainer a:last-child {     
+    background: $lightGrey;     
+    color: $black; 
+}

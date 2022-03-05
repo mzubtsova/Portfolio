@@ -311,7 +311,7 @@ nav ul li:last-child {
 }
 
 main#main {
-  background-image: url(../assets/background-lg.png);
+  background-image: url(../background-lg.png);
   float: left;
   width: 100%;
   padding: 180px 0 470px 0;

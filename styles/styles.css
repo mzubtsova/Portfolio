@@ -406,6 +406,18 @@ button.redButton {
   border-radius: 50%;
 }
 
+.arrow {
+  position: relative;
+  bottom: -10rem;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  /**
+   * Dark Arrow Down
+   */
+}
+
 section.skills {
   float: left;
   width: 100%;

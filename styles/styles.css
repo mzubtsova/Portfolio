@@ -466,7 +466,8 @@ section.skills h2 {
 }
 
 .item .back {
-  position: absolute;
+  font-family: "Roboto", sans-serif;
+  margin-top: -30px;
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
   -webkit-backface-visibility: hidden;

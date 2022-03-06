@@ -1,13 +1,13 @@
 // courses page
 
-section.course_outer {     
+section.courseOuter {     
     float: left;   
     position: relative;  
     width: 100%;     
     padding: 170px 0 200px 0; 
 }
 
-section.course_outer:after {     
+section.courseOuter:after {     
     content: '';     
     position: absolute;     
     top: 0;     
@@ -19,7 +19,7 @@ section.course_outer:after {
     clip-path: polygon(0% 16%, 100% 0%, 100% 86%, 0% 100%);  
 }
 
-.courses_main{
+.coursesMain{
     float:left; 
     width:100%; 
     display: flex; 
@@ -45,7 +45,7 @@ section.course_outer:after {
     text-align: center;     
     padding: 0 10px; 
 }
-.coursesInfo_detail {
+.coursesInfoDetail {
     float: left;
     width: 100%;
     background: $white;
@@ -66,13 +66,13 @@ section.course_outer:after {
     }
 }
 
-.coursesInfo_detail p:last-child {     
+.coursesInfoDetail p:last-child {     
     margin: 0; 
 }
-.coursesInfo_detail p.company {     
+.coursesInfoDetail p.company {     
     color: $red; 
 }
-.coursesInfo_detail p.time {     
+.coursesInfoDetail p.time {     
     font-weight: 600;     
     color: $cream; 
 }

@@ -303,7 +303,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #af9883;
+  color: #f24150;
 }
 
 nav ul li:last-child {
@@ -311,10 +311,10 @@ nav ul li:last-child {
 }
 
 main#main {
-  background-image: url(../background-lg.png);
+  background-image: url(../assets/background-lg.png);
   float: left;
   width: 100%;
-  padding: 180px 0 470px 0;
+  padding: 180px 0 340px 0;
   background-color: #f2e8df;
   background-size: 100%;
   background-position: bottom;
@@ -418,50 +418,37 @@ section.skills h2 {
   font-size: 35px;
   font-weight: 600;
   margin: 0;
-  position: relative;
   padding: 0 0 15px 0;
 }
 
-section.skills h2:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 160px;
-  background: #BD805D;
-  height: 3px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.skills_icons {
+.skillsIcons {
   float: left;
   width: 100%;
   text-align: center;
   margin: 80px 0 0 0;
 }
-.skills_icons ul {
+.skillsIcons ul {
   float: left;
   width: 100%;
 }
-.skills_icons ul li {
+.skillsIcons ul li {
   float: none;
   display: inline-block;
   width: 24%;
   margin: 0 0 70px 0;
 }
-.skills_icons ul li i {
+.skillsIcons ul li i {
   font-size: 50px;
 }
 
-section.course_outer {
+section.courseOuter {
   float: left;
   position: relative;
   width: 100%;
   padding: 170px 0 200px 0;
 }
 
-section.course_outer:after {
+section.courseOuter:after {
   content: "";
   position: absolute;
   top: 0;
@@ -475,7 +462,7 @@ section.course_outer:after {
           clip-path: polygon(0% 16%, 100% 0%, 100% 86%, 0% 100%);
 }
 
-.courses_main {
+.coursesMain {
   float: left;
   width: 100%;
   display: -webkit-box;
@@ -503,7 +490,7 @@ section.course_outer:after {
   padding: 0 10px;
 }
 
-.coursesInfo_detail {
+.coursesInfoDetail {
   float: left;
   width: 100%;
   background: #ffffff;
@@ -511,13 +498,13 @@ section.course_outer:after {
   -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.2);
 }
-.coursesInfo_detail h3 {
+.coursesInfoDetail h3 {
   float: left;
   width: 100%;
   font-size: 18px;
   margin: 0 0 20px 0;
 }
-.coursesInfo_detail p {
+.coursesInfoDetail p {
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
@@ -525,15 +512,15 @@ section.course_outer:after {
   font-weight: 500;
 }
 
-.coursesInfo_detail p:last-child {
+.coursesInfoDetail p:last-child {
   margin: 0;
 }
 
-.coursesInfo_detail p.company {
+.coursesInfoDetail p.company {
   color: #f24150;
 }
 
-.coursesInfo_detail p.time {
+.coursesInfoDetail p.time {
   font-weight: 600;
   color: #af9883;
 }
@@ -558,7 +545,7 @@ section.projectsSection p.projectInfo {
   letter-spacing: 7px;
 }
 
-.project-container-main {
+.projectContainerMain {
   float: left;
   width: 100%;
   margin: 60px 0 0 0;
@@ -631,12 +618,12 @@ section.projectsSection p.projectInfo {
   color: #000000;
 }
 
-.footer_upper {
+.footerUpper {
   float: left;
   width: 100%;
 }
 
-.footer_bottom {
+.footerBottom {
   float: left;
   width: 100%;
   background-image: url(../assets/ft-bg.png);
@@ -765,4 +752,282 @@ footer p.mainInfo {
 .footerContact ul i:hover,
 .footerContact ul i:focus {
   color: #f24150;
+}
+
+@media (max-width: 1500px) {
+  .footerBottom {
+    padding: 340px 0 0 0;
+  }
+
+  main#main {
+    padding: 180px 0 330px 0;
+  }
+}
+@media (max-width: 1300px) {
+  main#main {
+    padding: 180px 0 280px 0;
+  }
+
+  .footerBottom {
+    padding: 290px 0 0 0;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  .information h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 991px) {
+  main#main {
+    padding: 150px 0 250px 0;
+  }
+
+  .information h1 {
+    font-size: 22px;
+  }
+
+  .information h2,
+section.skills h2,
+.coursesBlocks h2,
+.projectsSection h2,
+.footerContainer h3 {
+    font-size: 30px;
+  }
+
+  .footerContainer form {
+    padding: 0 30px;
+  }
+
+  .footerBottom {
+    padding: 220px 0 0 0;
+  }
+
+  footer.footer {
+    padding: 50px 0 0 0;
+  }
+
+  .coursesInfoDetail h3 {
+    min-height: 45px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  nav label {
+    display: block;
+  }
+
+  nav input {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    visibility: hidden;
+  }
+
+  nav label i {
+    width: 25px;
+    font-size: 25px;
+  }
+
+  nav input[type=checkbox]:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  nav input[type=checkbox]:checked + label .fa-close {
+    display: block;
+  }
+
+  nav input[type=checkbox]:checked + label .fa-bars {
+    display: none;
+  }
+
+  nav ul {
+    background: #000000;
+    -webkit-transition: 0.4s ease all;
+    transition: 0.4s ease all;
+    position: relative;
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    display: block;
+    margin: 10px 0 0 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 13px 20px;
+    width: 100%;
+    color: #ffffff;
+    border-bottom: 1px solid #333;
+  }
+
+  .headerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .information {
+    width: 100%;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .headerButtons {
+    text-align: center;
+  }
+
+  .headerButtons button {
+    float: none;
+    margin: 0 5px;
+  }
+
+  .headerImage {
+    width: 100%;
+    text-align: center;
+  }
+
+  .headerImage img {
+    width: 300px;
+  }
+
+  .information h2,
+section.skills h2,
+.coursesBlocks h2,
+.projectsSection h2,
+.footerContainer h3 {
+    font-size: 25px;
+    letter-spacing: 0;
+  }
+
+  main#main {
+    padding: 80px 0 190px 0;
+  }
+
+  section.skills {
+    padding: 70px 0 50px 0;
+  }
+
+  section.courseOuter:after {
+    -webkit-clip-path: polygon(0% 10%, 100% 0%, 100% 86%, 0% 93%);
+            clip-path: polygon(0% 10%, 100% 0%, 100% 86%, 0% 93%);
+  }
+
+  section.courseOuter {
+    padding: 120px 0 150px 0;
+  }
+
+  .coursesMain {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .coursesInfo {
+    width: 50%;
+    margin: 0 0 20px 0;
+  }
+
+  section.projectsSection {
+    padding: 0;
+  }
+
+  .projectsSection p.projectInfo, footer p.mainInfo {
+    letter-spacing: 2px;
+  }
+
+  .footerBottom {
+    padding: 170px 0 0 0;
+  }
+
+  .projectContainer {
+    width: 50%;
+    padding: 0 10px;
+    margin: 0 0 40px 0;
+  }
+
+  .projectContainerMain {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    grid-column-gap: inherit;
+  }
+}
+@media (max-width: 575px) {
+  main#main {
+    padding: 80px 0 160px 0;
+  }
+
+  .skillsIcons ul li i {
+    font-size: 35px;
+  }
+
+  section.courseOuter:after {
+    -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 86%, 0% 90%);
+            clip-path: polygon(0% 5%, 100% 0%, 100% 86%, 0% 90%);
+  }
+
+  .coursesInfo {
+    width: 100%;
+  }
+
+  section.courseOuter {
+    padding: 90px 0 170px 0;
+  }
+
+  .projectContainer {
+    width: 100%;
+  }
+
+  .footerContainer form {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .footerBottom {
+    padding: 100px 0 0 0;
+    background-size: 140% 100%;
+  }
+
+  .footerContact ul i {
+    font-size: 20px;
+    margin: 0 0 0 15px;
+  }
+
+  .footerName p {
+    font-size: 14px;
+  }
+
+  .footerContact ul i {
+    font-size: 17px;
+    margin: 0 0 0 9px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .headerButtons button {
+    padding: 15px 28px;
+  }
+
+  .footerContainer form button {
+    width: 30%;
+  }
 }

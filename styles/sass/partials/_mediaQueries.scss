@@ -1,0 +1,218 @@
+// media queries
+
+@media(max-width:1500px){
+	.footerBottom{    
+        padding: 340px 0 0 0;
+    }
+	main#main{
+        padding: 180px 0 330px 0;
+    }
+}
+
+@media(max-width:1300px){
+
+	main#main{
+        padding: 180px 0 280px 0;
+    }
+	.footerBottom {     
+        padding: 290px 0 0 0; 
+    }
+}
+@media(max-width:1199px){
+	.container{
+        padding:0 25px;
+    }
+	.information h2{
+        font-size:35px;
+    }
+}
+
+@media(max-width:991px)
+{
+	main#main {     
+        padding: 150px 0 250px 0; 
+    }
+	.information h1{
+        font-size: 22px;
+    }
+	.information h2, 
+    section.skills h2,
+    .coursesBlocks h2, 
+    .projectsSection h2, 
+    .footerContainer h3 {     
+        font-size: 30px; 
+    }
+	.footerContainer form{
+        padding: 0 30px;
+    }
+	.footerBottom {     
+        padding: 220px 0 0 0; 
+    }
+	footer.footer{    
+        padding: 50px 0 0 0;
+    }
+	.coursesInfoDetail h3{    
+        min-height: 45px;     
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:767px){ 	
+	nav label {     
+        display: block; 
+    }
+	nav input {    
+        display: block;     
+        position: absolute;     
+        width: 25px;     
+        height: 25px;     
+        visibility: hidden; 
+    }
+	nav label i {     
+        width: 25px;     
+        font-size: 25px; 
+    }
+	nav input[type=checkbox]:checked ~ ul {     transform: none; 
+    }
+	nav input[type=checkbox]:checked + label .fa-close {     
+        display:block;
+    }
+	nav input[type=checkbox]:checked + label .fa-bars {     
+        display:none;
+    }
+	nav ul {     
+        background: $black;     
+        transition: 0.4s ease all;     
+        position: relative;     
+        transform: translateX(-110%);     display: block;     
+        margin: 10px 0 0 0; 
+    }
+	nav ul li {     
+        width: 100%;     
+        margin: 0; 
+    }
+	nav ul li a {     
+        padding: 13px 20px;     
+        width: 100%;     
+        color: $white;     
+        border-bottom: 1px solid #333; 
+    }
+	.headerContent{    
+        flex-direction: column-reverse;
+    }
+	.information{
+        width:100%;    
+        padding: 20px 0 0 0;     
+        text-align: center;
+    }
+	.headerButtons{
+        text-align:center;
+    }
+	.headerButtons button{
+        float:none; 
+        margin: 0 5px;
+    }
+	.headerImage{
+        width:100%; 
+        text-align:center;
+    }
+	.headerImage img{
+        width:300px;
+    }
+	.information h2, 
+    section.skills h2, 
+    .coursesBlocks h2, 
+    .projectsSection h2, 
+    .footerContainer h3 {     
+        font-size: 25px; 
+        letter-spacing:0;
+    }
+	main#main {     
+        padding: 80px 0 190px 0; 
+    }
+	section.skills{
+        padding: 70px 0 50px 0;
+    }
+	section.courseOuter:after{    
+        clip-path: polygon(0% 10%, 100% 0%, 100% 86%, 0% 93%); 
+    }
+	section.courseOuter{
+        padding: 120px 0 150px 0;
+    }
+	.coursesMain{    
+        flex-wrap: wrap;     
+        justify-content: center;
+    }
+	.coursesInfo{        
+        width: 50%;     
+        margin: 0 0 20px 0;
+    }
+	section.projectsSection{
+        padding:0;
+    }
+	.projectsSection p.projectInfo, footer p.mainInfo{    
+        letter-spacing: 2px;
+    }
+	.footerBottom {     
+        padding: 170px 0 0 0; 
+    }
+	.projectContainer {     
+        width: 50%;     padding: 0 10px;     margin: 0 0 40px 0; 
+    }
+	.projectContainerMain{
+        justify-content: center;     
+        display: -webkit-box;
+        display: flex;      
+        flex-wrap: wrap;    
+        grid-column-gap: inherit;
+    }
+}
+@media(max-width:575px)
+{
+	main#main {     
+        padding: 80px 0 160px 0; 
+    }
+	.skillsIcons ul li i {     
+        font-size: 35px; 
+    }
+	section.courseOuter:after {     
+        clip-path: polygon(0% 5%, 100% 0%, 100% 86%, 0% 90%);
+     }
+	.coursesInfo {     
+        width: 100%;  
+    }
+	section.courseOuter {     
+        padding: 90px 0 170px 0; 
+    }
+	.projectContainer {     
+        width: 100%; 	
+    }
+	.footerContainer form {
+        margin: 20px 0; 
+        padding:0;
+    }
+	.footerBottom {     
+        padding: 100px 0 0 0; 
+        background-size: 140% 100%;
+    }
+	.footerContact ul i{    
+        font-size: 20px;     
+        margin: 0 0 0 15px;
+    }
+	.footerName p{
+        font-size:14px;
+    }
+	.footerContact ul i {     
+        font-size: 17px;     
+        margin: 0 0 0 9px; 
+    }
+	.container {     
+        padding: 0 15px; 
+    }
+	.headerButtons button{    
+        padding: 15px 28px;
+    }
+	.footerContainer form button{
+        width:30%;   
+     }
+}

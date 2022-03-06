@@ -478,7 +478,6 @@ section.skills h2 {
   font-size: 20px;
   text-align: center;
   color: #f24150;
-  margin: -30px 0 0 50px;
 }
 
 .item.flip .back {
@@ -1120,5 +1119,9 @@ section.skills h2,
   .increasing:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+
+  .item .back p {
+    font-size: 16px;
   }
 }

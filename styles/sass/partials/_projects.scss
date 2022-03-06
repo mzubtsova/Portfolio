@@ -35,6 +35,8 @@ section.projectsSection {
         float: left;     
         width: 100%;     
         text-align: center; 
+        padding-top: 10px;
+}
         h3 {     
             float: left;     
             width: 100%;     
@@ -45,7 +47,7 @@ section.projectsSection {
             width: 100%;     
             margin: 0 0 25px 0; 
         }
-    }
+    
     .toolsContainer {     
         float: left;     
         width: 100%;     
@@ -87,4 +89,12 @@ section.projectsSection {
 .linksContainer a:last-child {     
     background: $lightGrey;     
     color: $black; 
+}
+
+increasing{
+    transition: transform .2s; 
+}
+
+.increasing:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

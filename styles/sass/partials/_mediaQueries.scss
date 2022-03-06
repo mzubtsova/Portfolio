@@ -167,8 +167,14 @@
         grid-column-gap: inherit;
     }
 }
-@media(max-width:575px)
-{
+@media(max-width:575px){
+    .increasing{
+    transition: transform .2s; 
+}
+
+.increasing:hover {
+  transform: scale(1.1); 
+}
 	main#main {     
         padding: 80px 0 160px 0; 
     }
@@ -215,4 +221,17 @@
 	.footerContainer form button{
         width:30%;   
      }
+}
+@media(max-width:365px){
+    .footerContact ul i{    
+        font-size: 18px;     
+        margin: 10px 0 -5px 15px;
+    }
+    .increasing{
+    transition: transform .2s; 
+}
+
+.increasing:hover {
+  transform: scale(1); 
+}
 }

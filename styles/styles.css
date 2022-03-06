@@ -478,7 +478,7 @@ section.skills h2 {
   font-size: 20px;
   text-align: center;
   color: #f24150;
-  margin: -30px 0 0 30px;
+  margin: -30px 0 0 50px;
 }
 
 .item.flip .back {
@@ -603,13 +603,16 @@ section.projectsSection p.projectInfo {
   float: left;
   width: 100%;
   text-align: center;
+  padding-top: 10px;
 }
-.projectText h3 {
+
+h3 {
   float: left;
   width: 100%;
   margin: 10px 0 10px 0;
 }
-.projectText p {
+
+p {
   float: left;
   width: 100%;
   margin: 0 0 25px 0;
@@ -661,6 +664,19 @@ section.projectsSection p.projectInfo {
 .linksContainer a:last-child {
   background: #f2e8df;
   color: #000000;
+}
+
+increasing {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.increasing:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .footerUpper {
@@ -1015,6 +1031,18 @@ section.skills h2,
   }
 }
 @media (max-width: 575px) {
+  .increasing {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+
+  .increasing:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
   main#main {
     padding: 80px 0 160px 0;
   }
@@ -1074,5 +1102,23 @@ section.skills h2,
 
   .footerContainer form button {
     width: 30%;
+  }
+}
+@media (max-width: 365px) {
+  .footerContact ul i {
+    font-size: 18px;
+    margin: 10px 0 -5px 15px;
+  }
+
+  .increasing {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+
+  .increasing:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }

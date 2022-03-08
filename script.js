@@ -2,8 +2,7 @@
 
 
 let i = 0;
-const text = "Hello, I am Marina";
-
+const text = "Hello, my name is Marina";
 const speed = "200";
 function typeWriter() {
 
@@ -15,6 +14,20 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+const items = Array.from(document.getElementsByClassName('item'));
+
+console.log(items);
+
+items.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.classList.add('flip');
+    });
+    item.addEventListener('mouseout', () => {
+        item.classList.remove('flip');
+    })
+});
 
 
 // work on form element

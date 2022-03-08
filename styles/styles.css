@@ -420,7 +420,7 @@ button.redButton {
 
 main .down-arrow {
   position: absolute;
-  padding-top: 30px;
+  padding-top: 50px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: transparent;

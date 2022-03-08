@@ -19,7 +19,7 @@
     }
 }
 @media(max-width:1199px){
-	.container{
+	.wrapper{
         padding:0 25px;
     }
 	.information h2{
@@ -57,7 +57,19 @@
     }
 }
 
+@media(max-width:966px){
+    #scrollDown{
+        margin-bottom: 100px;
+    }
+}
+
 @media(max-width:767px){ 	
+    #scrollDown{
+        margin-bottom: 10px;
+    }
+    nav{
+        background-color: transparent;
+    }
 	nav label {     
         display: block; 
     }
@@ -167,6 +179,11 @@
         grid-column-gap: inherit;
     }
 }
+@media(max-width:590px){
+#scrollDown{
+        margin-bottom: -20px;
+    }
+}
 @media(max-width:575px){
     .increasing{
     transition: transform .2s; 
@@ -212,8 +229,9 @@
         font-size: 17px;     
         margin: 0 0 0 9px; 
     }
-	.container {     
-        padding: 0 15px; 
+	
+    .wrapper{
+        padding: 0 15px;
     }
 	.headerButtons button{    
         padding: 15px 28px;
@@ -222,7 +240,19 @@
         width:30%;   
      }
 }
+@media(max-width:506px){
+#scrollDown{
+        margin-bottom: -80px;
+    }
+}
+@media(max-width:396px){
+#scrollDown{
+        margin-bottom: -120px;
+    }
+}
+
 @media(max-width:365px){
+    
     .footerContact ul i{    
         font-size: 18px;     
         margin: 10px 0 -5px 15px;

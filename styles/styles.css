@@ -248,7 +248,6 @@ body {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 16px;
-  /* 1 rem = 20px */
 }
 
 nav input,
@@ -261,23 +260,36 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+a,
+i {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1100px;
+  max-width: 100%;
+}
+
 header {
   float: left;
   width: 100%;
   margin: 20px 0 0 0;
   position: absolute;
   top: 0;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1100px;
-  max-width: 100%;
+  position: fixed;
 }
 
 nav {
   float: left;
   width: 100%;
+  font-size: 18px;
+  padding: 25px 25px;
+  background-color: #f2e8df;
 }
 nav ul {
   float: left;
@@ -337,7 +349,7 @@ main#main {
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 500;
 }
 .information h2 {
@@ -406,18 +418,53 @@ button.redButton {
   border-radius: 50%;
 }
 
-.arrow {
-  position: relative;
-  bottom: -10rem;
+main .down-arrow {
+  position: absolute;
+  bottom: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
   left: 50%;
-  margin-left: -20px;
-  width: 40px;
-  height: 40px;
-  /**
-   * Dark Arrow Down
-   */
+  -webkit-animation: bounce 5s linear infinite;
+          animation: bounce 5s linear infinite;
+  color: #000000;
 }
 
+#scrollDown {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
 section.skills {
   float: left;
   width: 100%;
@@ -678,17 +725,9 @@ p {
   color: #000000;
 }
 
-increasing {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-}
-
 .increasing:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .footerUpper {
@@ -846,7 +885,7 @@ footer p.mainInfo {
   }
 }
 @media (max-width: 1199px) {
-  .container {
+  .wrapper {
     padding: 0 25px;
   }
 
@@ -888,7 +927,20 @@ section.skills h2,
     padding: 0 20px;
   }
 }
+@media (max-width: 966px) {
+  #scrollDown {
+    margin-bottom: 100px;
+  }
+}
 @media (max-width: 767px) {
+  #scrollDown {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
   nav label {
     display: block;
   }
@@ -1042,6 +1094,11 @@ section.skills h2,
     grid-column-gap: inherit;
   }
 }
+@media (max-width: 590px) {
+  #scrollDown {
+    margin-bottom: -20px;
+  }
+}
 @media (max-width: 575px) {
   .increasing {
     -webkit-transition: -webkit-transform 0.2s;
@@ -1104,7 +1161,7 @@ section.skills h2,
     margin: 0 0 0 9px;
   }
 
-  .container {
+  .wrapper {
     padding: 0 15px;
   }
 
@@ -1114,6 +1171,16 @@ section.skills h2,
 
   .footerContainer form button {
     width: 30%;
+  }
+}
+@media (max-width: 506px) {
+  #scrollDown {
+    margin-bottom: -80px;
+  }
+}
+@media (max-width: 396px) {
+  #scrollDown {
+    margin-bottom: -120px;
   }
 }
 @media (max-width: 365px) {

@@ -1,17 +1,22 @@
 // JavaScript
 
-const items = Array.from(document.getElementsByClassName('item'));
 
-console.log(items);
+let i = 0;
+const text = "Hello, I am Marina";
 
-items.forEach(item => {
-    item.addEventListener('mouseover', () => {
-        item.classList.add('flip');
-    });
-    item.addEventListener('mouseout', () => {
-        item.classList.remove('flip');
-    })
-});
+const speed = "200";
+function typeWriter() {
+
+    if (i < text.length) {
+        document.querySelector('.greetings').innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed)
+    };
+}
+
+typeWriter();
+
+
 // work on form element
 const formElement = document.querySelector('form');
 console.log(formElement);
@@ -28,10 +33,6 @@ formElement.addEventListener('submit', function (event) {
 
     if (userEmail === "") {
         alert("Please include your email!");
-    // } else if (userEmail === "") {
-    //     alert('Please include your email!');
-    // } else if (userMessage === "") {
-    //     alert('Please leave us a message. We appreciate your opinion!');
     } else {
         alert('Thank you for your email! I will connect you shortly!');
         nameInput.value = '';
@@ -39,3 +40,4 @@ formElement.addEventListener('submit', function (event) {
         userFeedback.value = '';
     }
 })
+

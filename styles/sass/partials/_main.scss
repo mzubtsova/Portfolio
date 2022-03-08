@@ -90,11 +90,10 @@ button.redButton {
 
 main .down-arrow{
     position: absolute;
-    bottom: 10px;
+    padding-top: 30px;
     transform: translateX(-50%);
     background-color: transparent;
     border: none;
-    // padding: 5px 10px;
     left: 50%;
     animation: bounce 5s linear infinite;
     color: $black;

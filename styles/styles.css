@@ -420,7 +420,7 @@ button.redButton {
 
 main .down-arrow {
   position: absolute;
-  bottom: 10px;
+  padding-top: 30px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: transparent;
@@ -1175,7 +1175,7 @@ section.skills h2,
 }
 @media (max-width: 506px) {
   #scrollDown {
-    margin-bottom: -80px;
+    margin-bottom: -300px;
   }
 }
 @media (max-width: 396px) {

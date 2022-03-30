@@ -38,40 +38,40 @@ footer p.mainInfo {
     text-align: center;     
     letter-spacing: 7px; 
 }
-.footerContainer form {     
-    float: left;     
-    width: 100%;     
-    display: flex;      
-    margin: 50px 0;     
-    padding: 0 90px; 
-    input {     
-        float: left;     
-        width: 80%;     
-        border-radius: 0;     
-        border: 1px solid #F24151;     
-        padding: 10px 20px;     
-        font-size: 16px; 
-        border-right:none;}
-        button {     
-            width: 20%;     
-            float: left;     
-            background: $red;     
-            border: none;     
-            padding: 20px 0;
-            cursor:pointer;     
-            color: $white;     
-            font-size: 16px;     
-            font-weight: 600; 
-            transition: 0.4s ease all;}
-}
+// .footerContainer form {     
+//     float: left;     
+//     width: 100%;     
+//     display: flex;      
+//     margin: 50px 0;     
+//     padding: 0 90px; 
+//     input {     
+//         float: left;     
+//         width: 80%;     
+//         border-radius: 0;     
+//         border: 1px solid #F24151;     
+//         padding: 10px 20px;     
+//         font-size: 16px; 
+//         border-right:none;}
+//         button {     
+//             width: 20%;     
+//             float: left;     
+//             background: $red;     
+//             border: none;     
+//             padding: 20px 0;
+//             cursor:pointer;     
+//             color: $white;     
+//             font-size: 16px;     
+//             font-weight: 600; 
+//             transition: 0.4s ease all;}
+// }
 
-.footerContainer form input:focus-visible {     
-    outline: none; 
-}
-.footerContainer form button:hover,
-.footerContainer form button:focus {     background: $black;     
-       color: $white; 
-    }
+// .footerContainer form input:focus-visible {     
+//     outline: none; 
+// }
+// .footerContainer form button:hover,
+// .footerContainer form button:focus {     background: $black;     
+//        color: $white; 
+//     }
 .footerName_main { 
     display: flex;     
     justify-content: space-between;     

@@ -768,48 +768,6 @@ footer p.mainInfo {
   letter-spacing: 7px;
 }
 
-.footerContainer form {
-  float: left;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 50px 0;
-  padding: 0 90px;
-}
-.footerContainer form input {
-  float: left;
-  width: 80%;
-  border-radius: 0;
-  border: 1px solid #F24151;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-right: none;
-}
-.footerContainer form button {
-  width: 20%;
-  float: left;
-  background: #f24150;
-  border: none;
-  padding: 20px 0;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-transition: 0.4s ease all;
-  transition: 0.4s ease all;
-}
-
-.footerContainer form input:focus-visible {
-  outline: none;
-}
-
-.footerContainer form button:hover,
-.footerContainer form button:focus {
-  background: #000000;
-  color: #ffffff;
-}
-
 .footerName_main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,10 +863,6 @@ section.skills h2,
 .projectsSection h2,
 .footerContainer h3 {
     font-size: 30px;
-  }
-
-  .footerContainer form {
-    padding: 0 30px;
   }
 
   .footerBottom {
@@ -1134,11 +1088,6 @@ section.skills h2,
     width: 100%;
   }
 
-  .footerContainer form {
-    margin: 20px 0;
-    padding: 0;
-  }
-
   .footerBottom {
     padding: 100px 0 0 0;
     background-size: 140% 100%;
@@ -1164,10 +1113,6 @@ section.skills h2,
 
   .headerButtons button {
     padding: 15px 28px;
-  }
-
-  .footerContainer form button {
-    width: 30%;
   }
 }
 @media (max-width: 506px) {

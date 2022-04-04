@@ -116,6 +116,10 @@
         width:100%;    
         padding: 20px 0 0 0;     
         text-align: center;
+        p{
+            text-align: left;
+            padding: 20px 20px;
+        }
     }
 	.headerButtons{
         text-align:center;
@@ -131,6 +135,9 @@
 	.headerImage img{
         width:300px;
     }
+    .increasing:hover {
+  transform: scale(1.1); 
+}
 	.information h2, 
     section.skills h2, 
     .coursesBlocks h2, 
